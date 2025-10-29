@@ -42,7 +42,6 @@ public class second {
     static boolean isSafe(int r, int c, int[] ship) {
         int rowA = ship[0], colA = ship[1], diagA = ship[2];
 
-        // check all directions (row, col, diagonals)
         for (int i = -rowA; i <= rowA; i++) {
             int nc = c + i;
             if (inBounds(r, nc) && board[r][nc] > 0) return false;
